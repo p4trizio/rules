@@ -22,7 +22,7 @@ use Drupal\rules\Exception\RulesEvaluationException;
  * A rule element may clone the state, so any added variables are only visible
  * for elements in the current PHP-variable-scope.
  */
-class RulesState {
+class RulesState implements RulesStateInterface {
 
   /**
    * Globally keeps the ids of rules blocked due to recursion prevention.

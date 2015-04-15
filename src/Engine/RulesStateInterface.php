@@ -12,8 +12,7 @@ use Drupal\Core\Plugin\Context\ContextInterface;
 use Drupal\rules\Exception\RulesEvaluationException;
 
 /**
- * Defines the interface for Rules states.
- *
+ * Defines an interface for the rules state.
  */
 interface RulesStateInterface {
 
