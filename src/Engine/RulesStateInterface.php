@@ -20,7 +20,7 @@ interface RulesStateInterface {
    * Adds the given variable to the given execution state.
    *
    * @param string $name
-   *   The varible name.
+   *   The variable name.
    * @param \Drupal\Core\Plugin\Context\ContextInterface $context
    *   The variable wrapped as context.
    */
@@ -35,7 +35,7 @@ interface RulesStateInterface {
    * @return \Drupal\Core\Plugin\Context\ContextInterface
    *   The variable wrapped as context.
    *
-   * @throws RulesEvaluationException
+   * @throws \Drupal\rules\Exception\RulesEvaluationException
    *   Throws a RulesEvaluationException if the variable does not exist in the
    *   state.
    */
@@ -54,7 +54,7 @@ interface RulesStateInterface {
    * @return \Drupal\Core\TypedData\TypedDataInterface
    *   The variable wrapped as typed data.
    *
-   * @throws RulesEvaluationException
+   * @throws \Drupal\rules\Exception\RulesEvaluationException
    *   Throws a RulesEvaluationException in case the selector cannot be applied.
    */
   public function applyDataSelector($selector, $langcode = LanguageInterface::LANGCODE_NOT_SPECIFIED);
